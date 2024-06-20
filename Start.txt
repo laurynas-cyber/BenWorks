@@ -1,1 +1,3 @@
+
+cd BenWorks - nueina i folderi
 npm run dev -> start server http://localhost:3000/
