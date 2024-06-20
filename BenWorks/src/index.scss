@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    background-color: var(--Beige2);
+    font-family: var(--Varela);
+    color: var(--SmokyBlack);
+  }
+  
+  :root {
+    /* Green */
+    --Mint: #5cab7d;
+    --Seagreen: #5a9367;
+    --HunterGreen: #44633f;
+    --Seagreen: #3f4b3b;
+    --TeaGreen: #c9e3ac;
+    --Pistachio: #90be6d;
+  
+    /* Light */
+    --Cream: #eaefbd;
+    --Beige1: #dde2c6;
+    --Beige2: #e6eed6;
+  
+    /* Dark */
+    --Brown: #37371f;
+    --SmokyBlack: #090c02;
+  
+    /* Bright */
+    --Orange: #ea9010;
+  
+    /* Logo fonts */
+    --Rye: "Rye", serif;
+    --Jaini: "Jaini Purva", system-ui;
+    --Cinzel: "Cinzel", serif;
+    --Crimson: "Crimson Text", serif;
+    --Moda: "Bodoni Moda", serif;
+  
+    /* other fonts  */
+    --Varela: "Varela Round", sans-serif;
+    --Libre: "Libre Baskerville", serif;
+    --Comf: "Comfortaa", sans-serif;
+    --Antic: "Antic", sans-serif;
+  }
+
+  //style start
+  body {
+    /* height: 1000px; */
+  }
+  
+  
+  nav {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    .logo {
+      margin: 10px 50px;
+      font-size: 40px;
+      font-family: var(--Crimson);
+      color: var(--SmokyBlack);
+      text-shadow: #44633f 1px 1px;
+      letter-spacing: -3px;
+    }
+    .NavUl {
+      margin: 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 30px;
+      li {
+        cursor: pointer;
+        transition: all ease-in 0.3s;
+        &:hover {
+          color: var(--HunterGreen);
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    nav {
+      justify-content: space-between;
+    }
+  }
+  
