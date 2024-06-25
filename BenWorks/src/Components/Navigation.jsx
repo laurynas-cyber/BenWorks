@@ -1,21 +1,11 @@
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { ResponsiveContext } from "../App";
 import NavList from "./NavList";
 
-function Navigation() {
-  const [navbar, setNavbar] = useState(true);
-
-  //choose the screen size
-  const handleResize = () => {
-    if (window.innerWidth > 950) {
-      setNavbar(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+function Navigation({ navbar, setNavbar }) {
+  const { responsive } = useContext(ResponsiveContext); // sito nereikia cia pavyzdys
 
   function handeleBar() {
     setNavbar(!navbar);
@@ -30,15 +20,9 @@ function Navigation() {
         ) : (
           <IoMdClose className="bar" onClick={handeleBar} />
         )}
-
-        <ul className="NavUl">
-          <li>Products</li>
-          <li>Contact Us</li>
-          <li>About</li>
-          <li>Home</li>
-        </ul>
+        <NavList classname={"NavUl"} />
+        <NavList navbar={navbar} classname={"hidden"} />
       </nav>
-      <NavList />
     </>
   );
 }

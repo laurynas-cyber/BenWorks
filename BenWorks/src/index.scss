@@ -11,7 +11,7 @@
 :root {
   /* Green */
   --Mint: #5cab7d;
-  --Seagreen: #5a9367;
+  --green: #5a9367;
   --HunterGreen: #44633f;
   --Seagreen: #3f4b3b;
   --TeaGreen: #c9e3ac;
@@ -45,13 +45,12 @@
 
 //style start
 body {
-  /* height: 1000px; */
   position: relative;
 }
 
 nav {
   width: 100%;
-  border: 1px solid red;
+  box-shadow: 0px 1px 5px #666d65;
   display: flex;
   align-items: flex-end;
   position: fixed;
@@ -62,7 +61,7 @@ nav {
     font-size: 40px;
     font-family: var(--Crimson);
     color: var(--SmokyBlack);
-    text-shadow: #44633f 4px 4px 6px, #44633f 1px 1px 0px;
+    text-shadow: #44633f 3px 2px 4px, #44633f 1px 1px 0px;
     letter-spacing: -3px;
     padding: 0;
   }
@@ -77,24 +76,25 @@ nav {
     margin: 10px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     list-style: none;
     gap: 30px;
+    li:hover {
+      color: var(--Seagreen);
+      padding-bottom: 2.3px;
+    }
   }
 }
 
 li {
   cursor: pointer;
-  transition: all ease-in 0.3s;
-  &:hover {
-    color: var(--HunterGreen);
-  }
+  transition: all ease-in 0.2s;
 }
 
 .hidden {
   display: block;
   width: 130px;
-  background-color: #5a9367;
+  background-color: var(--green);
   position: fixed;
   height: 90vh;
   display: flex;
@@ -103,9 +103,14 @@ li {
   top: 70px;
   right: 0;
   list-style: none;
+  transition: all 0.4s ease-out;
   li {
     margin: 35px 20px;
-    background-color: #5a9367;
+    background-color: var(--green);
+    &:hover {
+      margin-right: 25px;
+      color: var(--Seagreen);
+    }
   }
 }
 
@@ -124,4 +129,10 @@ li {
       height: auto;
     }
   }
+}
+
+.banner {
+  height: 680px;
+  width: 100%;
+  border: #3f4b3b 1px solid;
 }

@@ -1,6 +1,6 @@
-function NavList() {
+function NavList({ navbar, classname }) {
   return (
-    <ul className="hidden">
+    <ul className={classname} style={{ right: navbar ? "-200px" : "0px" }}>
       <li>Products</li>
       <li>Contact Us</li>
       <li>About</li>
