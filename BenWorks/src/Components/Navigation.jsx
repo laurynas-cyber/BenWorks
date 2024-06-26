@@ -13,12 +13,12 @@ function Navigation({ navbar, setNavbar }) {
 
   return (
     <>
-      <nav>
+      <nav style={{ backgroundColor: !navbar && "#e6eed6" }}>
         <div className="logo">BenWorks</div>
         {navbar ? (
           <GiHamburgerMenu className="bar" onClick={handeleBar} />
         ) : (
-          <IoMdClose className="bar" onClick={handeleBar} />
+          <IoMdClose className="bar barClose" onClick={handeleBar} />
         )}
         <NavList classname={"NavUl"} />
         <NavList navbar={navbar} classname={"hidden"} />

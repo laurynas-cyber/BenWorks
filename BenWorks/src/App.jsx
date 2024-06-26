@@ -3,6 +3,7 @@ import { createContext } from "react";
 import "./index.scss";
 import Navigation from "./Components/Navigation";
 import Banner from "./Components/Banner";
+import SectionInfo from "./Components/SectionInfo";
 
 export const ResponsiveContext = createContext();
 
@@ -29,6 +30,7 @@ function App() {
         <header>
           <Navigation navbar={navbar} setNavbar={setNavbar} />
           <Banner />
+          <SectionInfo />
         </header>
       </ResponsiveContext.Provider>
     </>
