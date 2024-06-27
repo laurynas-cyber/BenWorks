@@ -1,12 +1,9 @@
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useContext } from "react";
-import { ResponsiveContext } from "../App";
+
 import NavList from "./NavList";
 
 function Navigation({ navbar, setNavbar, navbarScroll }) {
-  const { responsive } = useContext(ResponsiveContext); // sito nereikia cia pavyzdys
-
   function handeleBar() {
     setNavbar(!navbar);
   }
@@ -23,8 +20,7 @@ function Navigation({ navbar, setNavbar, navbarScroll }) {
         ) : (
           <IoMdClose className="bar barClose" onClick={handeleBar} />
         )}
-        {/* <NavList classname="NavUl" /> */}
-        <NavList navbar={navbar} classname="hidden" />
+        <NavList navbar={navbar} navbarScroll={navbarScroll} />
       </nav>
     </>
   );

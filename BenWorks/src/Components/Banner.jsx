@@ -17,10 +17,10 @@ function Banner() {
         <div className="bannertext">
           <span className="bigtextbanner">Handmade </span>
           <div className="restbannerCont">
-            <span>
+            <span className="textSpanCont">
               wooden <span className="smalltextbanner">furnitures </span>
             </span>
-            <span>
+            <span className="textSpanCont">
               <span className="smalltextbanner">for your </span> home
             </span>
           </div>

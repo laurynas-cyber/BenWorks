@@ -61,7 +61,7 @@ nav {
   &:hover {
     background-color: var(--Beige2);
   }
-  &:hover ul li {
+  &:hover ul .navLi {
     color: var(--SmokyBlack);
     filter: brightness(1);
   }
@@ -91,9 +91,11 @@ nav {
     }
   }
   .barClose path,
-  .barScroll path {
+  .barScroll path,
+  .barScroll {
     color: var(--SmokyBlack);
   }
+
   .NavUl {
     font-size: 20px;
     margin: 10px 20px;
@@ -102,7 +104,7 @@ nav {
     align-items: flex-end;
     list-style: none;
     gap: 30px;
-    li {
+    .navLi {
       color: var(--Beige2);
       filter: brightness(0.8);
     }
@@ -168,6 +170,7 @@ li {
   justify-content: center;
   align-items: center;
   pointer-events: none;
+  box-shadow: 0px 1px 3px #666d65;
   .video {
     height: 100%;
     position: absolute;
@@ -199,7 +202,6 @@ li {
       line-height: 90px;
       font-size: 50px;
       position: absolute;
-
       .restbannerCont {
         display: flex;
         flex-direction: column;
@@ -214,6 +216,9 @@ li {
       .smalltextbanner {
         font-size: 30px;
         margin: 10px;
+      }
+      .textSpanCont {
+        height: 85px;
       }
     }
   }
