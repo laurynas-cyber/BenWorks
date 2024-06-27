@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { ResponsiveContext } from "../App";
 import NavList from "./NavList";
 
-function Navigation({ navbar, setNavbar }) {
+function Navigation({ navbar, setNavbar, navbarScroll }) {
   const { responsive } = useContext(ResponsiveContext); // sito nereikia cia pavyzdys
 
   function handeleBar() {
@@ -13,15 +13,18 @@ function Navigation({ navbar, setNavbar }) {
 
   return (
     <>
-      <nav style={{ backgroundColor: !navbar && "#e6eed6" }}>
+      <nav style={{ backgroundColor: (!navbar || !navbarScroll) && "#e6eed6" }}>
         <div className="logo">BenWorks</div>
         {navbar ? (
-          <GiHamburgerMenu className="bar" onClick={handeleBar} />
+          <GiHamburgerMenu
+            className={"bar " + (!navbarScroll && "barScroll")}
+            onClick={handeleBar}
+          />
         ) : (
           <IoMdClose className="bar barClose" onClick={handeleBar} />
         )}
-        <NavList classname={"NavUl"} />
-        <NavList navbar={navbar} classname={"hidden"} />
+        {/* <NavList classname="NavUl" /> */}
+        <NavList navbar={navbar} classname="hidden" />
       </nav>
     </>
   );

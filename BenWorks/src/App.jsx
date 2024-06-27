@@ -12,6 +12,7 @@ function App() {
     window.innerWidth > 950 ? true : false
   );
   const [navbar, setNavbar] = useState(true);
+  const [navbarScroll, setNavbarScroll] = useState(true);
 
   const handleResize = () => {
     if (window.innerWidth > 950) {
@@ -20,18 +21,31 @@ function App() {
     } else setResponsive(false);
   };
 
+  const scrollBar = () => {
+    if (window.scrollY > 0) {
+      setNavbarScroll(false);
+    } else setNavbarScroll(true);
+  };
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", scrollBar);
   });
 
   return (
     <>
       <ResponsiveContext.Provider value={{ responsive: isResponsive }}>
         <header>
-          <Navigation navbar={navbar} setNavbar={setNavbar} />
+          <Navigation
+            navbar={navbar}
+            navbarScroll={navbarScroll}
+            setNavbar={setNavbar}
+          />
           <Banner />
-          <SectionInfo />
         </header>
+        <section className="SectionText">
+          <SectionInfo />
+        </section>
       </ResponsiveContext.Provider>
     </>
   );
