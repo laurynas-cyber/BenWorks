@@ -16,7 +16,6 @@ import { ResponsiveContext } from "../App";
 
 function NavList({ navbar, navbarScroll }) {
   const { responsive } = useContext(ResponsiveContext);
-  console.log(navbarScroll);
   return (
     <ul
       className={responsive ? "NavUl" : "hidden"} // kodel neveikia transition

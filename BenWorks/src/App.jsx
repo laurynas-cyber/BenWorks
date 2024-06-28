@@ -4,6 +4,7 @@ import "./index.scss";
 import Navigation from "./Components/Navigation";
 import Banner from "./Components/Banner";
 import SectionInfo from "./Components/SectionInfo";
+import MainProducts from "./Components/MainProducts";
 
 export const ResponsiveContext = createContext();
 
@@ -46,6 +47,9 @@ function App() {
         <section className="SectionText">
           <SectionInfo />
         </section>
+        <main>
+          <MainProducts />
+        </main>
       </ResponsiveContext.Provider>
     </>
   );
