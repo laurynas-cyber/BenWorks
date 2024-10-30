@@ -25,12 +25,12 @@ function Products() {
         </div>
         <div className="productInfoContainer"></div>
       </div>
-      {/* <div className="product">
+      <div className="product">
         <div className="pictureContainer">
           <img src={cutting} alt="" />
         </div>
         <div className="productInfoContainer"></div>
-      </div> */}
+      </div>
     </div>
   );
 }
