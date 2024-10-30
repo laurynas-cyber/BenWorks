@@ -21,8 +21,8 @@ nav {
     color: var(--SmokyBlack);
   }
 
-  &:hover .custom_nav_icon {
-    color: var(--SmokyBlack);
+  &:hover .custom_nav_icon .bars {
+    background-color: var(--SmokyBlack);
   }
 
   .logo {
@@ -101,11 +101,21 @@ li {
 
 .custom_nav_icon {
   border: solid 1px red;
-  padding: 10px;
-  color: var(--Beige2);
   transition: all ease-in 0.3s;
-}
-
-.barScroll {
-  color: var(--SmokyBlack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 50px;
+  height: 50px;
+  gap: 5px;
+  flex-direction: column;
+  cursor: pointer;
+  .bars {
+    transition: all ease-in 0.3s;
+    position: relative;
+    width: 80%;
+    height: 6px;
+    background-color: var(--Beige2);
+  }
 }

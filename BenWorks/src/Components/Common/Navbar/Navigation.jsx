@@ -10,18 +10,16 @@ function Navigation() {
   const { navbar, setNavbar, navbarScroll } = useContext(ResponsiveContext);
   function handeleBar() {
     setNavbar(!navbar);
+    console.log("click");
   }
 
   return (
     <>
       <nav style={{ backgroundColor: (!navbar || !navbarScroll) && "#e6eed6" }}>
         <div className="logo">BenWorks</div>
+        <NavIcon className="custom_nav_icon" />
         {navbar ? (
           <>
-            <NavIcon
-              className={"custom_nav_icon " + (!navbarScroll && "barScroll")}
-              onClick={handeleBar}
-            />
             <GiHamburgerMenu
               className={"bar " + (!navbarScroll && "barScroll")}
               onClick={handeleBar}
