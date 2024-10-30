@@ -1,0 +1,74 @@
+//Media start
+@media screen and (max-width: 1450px) {
+  .banner {
+    .bannertextCont {
+      justify-content: center;
+      .bannertext {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    .bar {
+      display: block;
+    }
+    .NavUl {
+      display: none;
+    }
+    .logo {
+      margin: 0 20px;
+      height: auto;
+    }
+  }
+  .banner {
+    .bannertextCont {
+      .bannertext {
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .SectionText {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner {
+    .bannertextCont {
+      .bannertext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        font-size: 9vw;
+        .bigtextbanner {
+          font-size: 14vw;
+        }
+        .smalltextbanner {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .SectionText {
+    height: 550px;
+    .InfoSectionContainer .InfoSection {
+      font-size: 17px;
+    }
+  }
+}

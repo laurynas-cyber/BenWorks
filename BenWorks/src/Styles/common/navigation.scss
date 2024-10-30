@@ -21,6 +21,10 @@ nav {
     color: var(--SmokyBlack);
   }
 
+  &:hover .custom_nav_icon {
+    color: var(--SmokyBlack);
+  }
+
   .logo {
     margin: 10px 50px;
     height: 45px;
@@ -93,4 +97,15 @@ li {
       color: var(--Seagreen);
     }
   }
+}
+
+.custom_nav_icon {
+  border: solid 1px red;
+  padding: 10px;
+  color: var(--Beige2);
+  transition: all ease-in 0.3s;
+}
+
+.barScroll {
+  color: var(--SmokyBlack);
 }
