@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { createContext } from "react";
-import "./index.scss";
-import Navigation from "./Components/Navigation";
-import Banner from "./Components/Banner";
+import "../src/Styles/index.scss";
+import Navigation from "./Components/Common/Navbar/Navigation";
+import Banner from "./Components/Home/Banner";
 import SectionInfo from "./Components/SectionInfo";
 import MainProducts from "./Components/MainProducts";
 
@@ -44,12 +44,6 @@ function App() {
           />
           <Banner />
         </header>
-        <section className="SectionText">
-          <SectionInfo />
-        </section>
-        <main>
-          <MainProducts />
-        </main>
       </ResponsiveContext.Provider>
     </>
   );

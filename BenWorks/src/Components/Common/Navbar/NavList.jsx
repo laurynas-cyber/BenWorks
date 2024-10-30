@@ -12,7 +12,7 @@
 // export default NavList;
 
 import { useContext } from "react";
-import { ResponsiveContext } from "../App";
+import { ResponsiveContext } from "../../../App";
 
 function NavList({ navbar, navbarScroll }) {
   const { responsive } = useContext(ResponsiveContext);
@@ -25,6 +25,7 @@ function NavList({ navbar, navbarScroll }) {
       <li className={!navbarScroll ? "barScroll" : "navLi"}>Contact Us</li>
       <li className={!navbarScroll ? "barScroll" : "navLi"}>About</li>
       <li className={!navbarScroll ? "barScroll" : "navLi"}>Home</li>
+      <li className={!navbarScroll ? "barScroll" : "navLi"}>Login</li>
     </ul>
   );
 }
