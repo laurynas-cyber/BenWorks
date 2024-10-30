@@ -1,4 +1,5 @@
 //navigation start
+@import "./customicon.scss";
 nav {
   z-index: 1;
   width: 100%;
@@ -96,26 +97,5 @@ li {
       margin-right: 25px;
       color: var(--Seagreen);
     }
-  }
-}
-
-.custom_nav_icon {
-  border: solid 1px red;
-  transition: all ease-in 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-width: 50px;
-  height: 50px;
-  gap: 5px;
-  flex-direction: column;
-  cursor: pointer;
-  .bars {
-    transition: all ease-in 0.3s;
-    position: relative;
-    width: 80%;
-    height: 6px;
-    background-color: var(--Beige2);
   }
 }

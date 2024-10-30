@@ -1,0 +1,21 @@
+.custom_nav_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 50px;
+  height: 50px;
+  gap: 5px;
+  flex-direction: column;
+  margin: 0px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  .bars {
+    top: 0;
+    transition: all ease-in 0.3s;
+    position: relative;
+    width: 80%;
+    height: 6px;
+    background-color: var(--Beige2);
+  }
+}

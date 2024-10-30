@@ -11,15 +11,25 @@ export default function NavIcon() {
     <div className="custom_nav_icon" onClick={handeleBar}>
       <div
         className={"bars"}
-        style={{ backgroundColor: (!navbarScroll || !navbar) && "#090c02" }}
+        style={{
+          backgroundColor: (!navbarScroll || !navbar) && "#090c02",
+          top: !navbar && "-20px",
+        }}
       ></div>
       <div
         className={"bars"}
-        style={{ backgroundColor: (!navbarScroll || !navbar) && "#090c02" }}
+        style={{
+          backgroundColor: (!navbarScroll || !navbar) && "#090c02",
+          transform: !navbar && "rotate(45deg)",
+        }}
       ></div>
       <div
         className={"bars"}
-        style={{ backgroundColor: (!navbarScroll || !navbar) && "#090c02" }}
+        style={{
+          backgroundColor: (!navbarScroll || !navbar) && "#090c02",
+          transform: !navbar && "rotate(-45deg)",
+          top: !navbar && "-11px",
+        }}
       ></div>
     </div>
   );
