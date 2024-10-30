@@ -1,0 +1,96 @@
+//navigation start
+nav {
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0px 1px 5px #666d65;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  min-height: 70px;
+  background: transparent;
+  transition: all ease-in 0.3s;
+  &:hover {
+    background-color: var(--Beige2);
+  }
+  &:hover ul .navLi {
+    color: var(--SmokyBlack);
+    filter: brightness(1);
+  }
+
+  &:hover svg path {
+    color: var(--SmokyBlack);
+  }
+
+  .logo {
+    margin: 10px 50px;
+    height: 45px;
+    font-size: 40px;
+    font-family: var(--Crimson);
+    color: var(--SmokyBlack);
+    text-shadow: #44633f 3px 2px 4px, #44633f 1px 1px 0px;
+    letter-spacing: -3px;
+    padding: 0;
+    pointer-events: none;
+  }
+  .bar {
+    display: none;
+    margin: 0px 20px;
+    font-size: 45px;
+    cursor: pointer;
+    path {
+      color: var(--Beige2);
+    }
+  }
+  .barClose path,
+  .barScroll path,
+  .barScroll {
+    color: var(--SmokyBlack);
+  }
+
+  .NavUl {
+    font-size: 20px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    gap: 30px;
+    .navLi {
+      color: var(--Beige2);
+      filter: brightness(0.8);
+    }
+    li:hover {
+      color: var(--Seagreen);
+      padding-bottom: 2.3px;
+    }
+  }
+}
+
+li {
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+.hidden {
+  box-shadow: -1px 0px 1px #666d65;
+  display: block;
+  width: 140px;
+  background-color: var(--green);
+  position: fixed;
+  height: 90vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  top: 70px;
+  right: 0;
+  list-style: none;
+  transition: all 0.4s ease-out;
+  li {
+    margin: 35px 20px;
+    background-color: var(--green);
+    &:hover {
+      margin-right: 25px;
+      color: var(--Seagreen);
+    }
+  }
+}

@@ -3,8 +3,7 @@ import { createContext } from "react";
 import "../src/Styles/index.scss";
 import Navigation from "./Components/Common/Navbar/Navigation";
 import Banner from "./Components/Home/Banner";
-import SectionInfo from "./Components/SectionInfo";
-import MainProducts from "./Components/MainProducts";
+
 
 export const ResponsiveContext = createContext();
 

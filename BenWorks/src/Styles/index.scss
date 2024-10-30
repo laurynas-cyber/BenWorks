@@ -1,3 +1,12 @@
+//global
+@import "./global/colors.scss";
+
+//banner
+@import "./components/banner.scss";
+
+// common
+@import "./common/navigation.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,206 +16,10 @@
   color: var(--SmokyBlack);
 }
 
-:root {
-  /* Green */
-  --Mint: #5cab7d;
-  --green: #5a9367;
-  --HunterGreen: #44633f;
-  --Seagreen: #3f4b3b;
-  --TeaGreen: #c9e3ac;
-  --Pistachio: #90be6d;
-
-  /* Light */
-  --Cream: #eaefbd;
-  --Beige1: #dde2c6;
-  --Beige2: #e6eed6;
-
-  /* Dark */
-  --Brown: #37371f;
-  --SmokyBlack: #090c02;
-
-  /* Bright */
-  --Orange: #ea9010;
-
-  /* Logo fonts */
-  --Rye: "Rye", serif;
-  --Jaini: "Jaini Purva", system-ui;
-  --Cinzel: "Cinzel", serif;
-  --Crimson: "Crimson Text", serif;
-  --Moda: "Bodoni Moda", serif;
-
-  /* other fonts  */
-  --Varela: "Varela Round", sans-serif;
-  --Libre: "Libre Baskerville", serif;
-  --Comf: "Comfortaa", sans-serif;
-  --Antic: "Antic", sans-serif;
-}
-
 //style start
 body {
   position: relative;
   background-color: var(--Beige2);
-}
-
-//navigation start
-nav {
-  z-index: 1;
-  width: 100%;
-  box-shadow: 0px 1px 5px #666d65;
-  display: flex;
-  align-items: flex-end;
-  position: fixed;
-  min-height: 70px;
-  background: transparent;
-  transition: all ease-in 0.3s;
-  &:hover {
-    background-color: var(--Beige2);
-  }
-  &:hover ul .navLi {
-    color: var(--SmokyBlack);
-    filter: brightness(1);
-  }
-
-  &:hover svg path {
-    color: var(--SmokyBlack);
-  }
-
-  .logo {
-    margin: 10px 50px;
-    height: 45px;
-    font-size: 40px;
-    font-family: var(--Crimson);
-    color: var(--SmokyBlack);
-    text-shadow: #44633f 3px 2px 4px, #44633f 1px 1px 0px;
-    letter-spacing: -3px;
-    padding: 0;
-    pointer-events: none;
-  }
-  .bar {
-    display: none;
-    margin: 0px 20px;
-    font-size: 45px;
-    cursor: pointer;
-    path {
-      color: var(--Beige2);
-    }
-  }
-  .barClose path,
-  .barScroll path,
-  .barScroll {
-    color: var(--SmokyBlack);
-  }
-
-  .NavUl {
-    font-size: 20px;
-    margin: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    list-style: none;
-    gap: 30px;
-    .navLi {
-      color: var(--Beige2);
-      filter: brightness(0.8);
-    }
-    li:hover {
-      color: var(--Seagreen);
-      padding-bottom: 2.3px;
-    }
-  }
-}
-
-li {
-  cursor: pointer;
-  transition: all ease-in 0.2s;
-}
-
-.hidden {
-  box-shadow: -1px 0px 1px #666d65;
-  display: block;
-  width: 140px;
-  background-color: var(--green);
-  position: fixed;
-  height: 90vh;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  top: 70px;
-  right: 0;
-  list-style: none;
-  transition: all 0.4s ease-out;
-  li {
-    margin: 35px 20px;
-    background-color: var(--green);
-    &:hover {
-      margin-right: 25px;
-      color: var(--Seagreen);
-    }
-  }
-}
-
-//Banner start
-.banner {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
-  box-shadow: 0px 1px 3px #666d65;
-  .video {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    iframe {
-      display: block;
-      width: 100%;
-      min-height: 680px;
-      filter: brightness(0.6);
-      z-index: -1;
-      scale: 1.3;
-    }
-  }
-
-  .bannertextCont {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    .bannertext {
-      margin-bottom: 100px;
-      display: flex;
-      align-items: flex-end;
-      gap: 7px;
-      color: var(--Beige2);
-      width: 60%;
-      line-height: 90px;
-      font-size: 50px;
-      position: absolute;
-      .restbannerCont {
-        display: flex;
-        flex-direction: column;
-      }
-      span {
-        color: var(--Beige2);
-      }
-      .bigtextbanner {
-        margin-bottom: 25px;
-        font-size: 5rem;
-      }
-      .smalltextbanner {
-        font-size: 30px;
-        margin: 10px;
-      }
-      .textSpanCont {
-        height: 85px;
-      }
-    }
-  }
 }
 
 //Section start
