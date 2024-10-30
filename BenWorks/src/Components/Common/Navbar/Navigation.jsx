@@ -2,8 +2,11 @@ import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import NavList from "./NavList";
+import { useContext } from "react";
+import { ResponsiveContext } from "../../Context/ResponsiveContext";
 
-function Navigation({ navbar, setNavbar, navbarScroll }) {
+function Navigation() {
+  const { navbar, setNavbar, navbarScroll } = useContext(ResponsiveContext);
   function handeleBar() {
     setNavbar(!navbar);
   }
