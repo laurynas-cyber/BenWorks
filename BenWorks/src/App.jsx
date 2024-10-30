@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <NavResponsive>
-        <header>
-          <Navigation />
+        <Navigation />
+       
           <Banner />
-        </header>
+       
       </NavResponsive>
     </>
   );

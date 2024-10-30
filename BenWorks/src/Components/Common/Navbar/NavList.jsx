@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { ResponsiveContext } from "../../Context/ResponsiveContext";
 
 function NavList({ navbar, navbarScroll }) {
-  const { responsive } = useContext(ResponsiveContext);
+  const { isResponsive } = useContext(ResponsiveContext);
   return (
     <ul
-      className={responsive ? "NavUl" : "hidden"} // kodel neveikia transition
+      className={isResponsive ? "NavUl" : "hidden"}
       style={{ right: navbar ? "-200px" : "0px" }}
     >
       <li className={!navbarScroll ? "barScroll" : "navLi"}>Products</li>
