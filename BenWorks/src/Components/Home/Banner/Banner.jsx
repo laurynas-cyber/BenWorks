@@ -6,9 +6,10 @@ function Banner() {
       <div className="banner">
         <div className="video">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/krVvhnuEUpI?start=65&playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=krVvhnuEUpI"
+            width="100%"
+            height="100%"
+            src="https://www.youtube-nocookie.com/embed/krVvhnuEUpI?start=65&playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=krVvhnuEUpI&modestbranding=1&rel=0"
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen

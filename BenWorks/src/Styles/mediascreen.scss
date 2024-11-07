@@ -1,13 +1,22 @@
-//Media start
+//Media start banner
 @media screen and (max-width: 1450px) {
   .banner {
     .bannertextCont {
       justify-content: center;
+
       .bannertext {
         width: 100%;
         height: 100%;
         justify-content: center;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    .bannertextCont {
+      height: 80%;
     }
   }
 }
