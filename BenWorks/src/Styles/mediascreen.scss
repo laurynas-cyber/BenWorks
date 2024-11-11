@@ -55,12 +55,15 @@
     .bannertextCont {
       .bannertext {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 0;
         font-size: 9vw;
         .bigtextbanner {
-          font-size: 14vw;
+          font-size: 40px;
+       
+          margin: 0;
         }
         .smalltextbanner {
           margin: 0;
@@ -69,8 +72,6 @@
     }
   }
 }
-
-
 
 // @media (min-width: 320px) {
 //   .banner {

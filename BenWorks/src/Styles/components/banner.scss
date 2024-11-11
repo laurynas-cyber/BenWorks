@@ -7,7 +7,7 @@
   position: relative;
   pointer-events: none;
   box-shadow: 0px 1px 3px #666d65;
-  border: solid 1px red;
+
   .video {
     position: relative;
     height: 100%;
@@ -16,7 +16,7 @@
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
-    border: solid 2px red;
+
     iframe {
       position: absolute;
       top: 0;
@@ -39,7 +39,6 @@
     align-items: flex-end;
 
     .bannertext {
-      border: solid 1px blue;
       margin-bottom: 100px;
       display: flex;
       align-items: flex-end;
