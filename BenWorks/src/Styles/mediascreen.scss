@@ -13,14 +13,6 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .banner {
-    .bannertextCont {
-      height: 80%;
-    }
-  }
-}
-
 @media screen and (max-width: 950px) {
   nav {
     justify-content: space-between;
@@ -39,22 +31,27 @@
   .banner {
     .bannertextCont {
       .bannertext {
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
+        height: 80%;
+        .smalltextbanner {
+          font-size: 20px;
+        }
+        .textSpanCont {
+          font-size: 2rem;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 650px) {
-  .SectionText {
-    height: 500px;
-  }
-}
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
   .banner {
+    height: 60vh;
+    .video {
+      height: 60vh;
+      iframe {
+        scale: 2.4;
+      }
+    }
     .bannertextCont {
       .bannertext {
         display: flex;
@@ -73,11 +70,14 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .SectionText {
-    height: 550px;
-    .InfoSectionContainer .InfoSection {
-      font-size: 17px;
-    }
-  }
-}
+
+
+// @media (min-width: 320px) {
+//   .banner {
+//     .video {
+//       iframe {
+//         scale: 2.4;
+//       }
+//     }
+//   }
+// }
