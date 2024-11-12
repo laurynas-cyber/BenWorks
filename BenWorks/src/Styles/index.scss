@@ -4,6 +4,8 @@
 //components
 @import "./components/banner.scss";
 @import "./components/categories.scss";
+@import "./components/collectionpresent.scss";
+
 
 // common
 @import "./common/nav/navigation.scss";
@@ -21,28 +23,6 @@
 }
 
 //style start
-body {
-  position: relative;
-  background-color: var(--Beige2);
-  overflow-y: hidden;
-  overflow-x: hidden;
-  // scrollbar-width: none;
-  // overflow-y: hidden;
-}
-
-// body::-webkit-scrollbar {
-//   width: 8px;
-// }
-
-// body::-webkit-scrollbar-track {
-//   background: transparent;
-// }
-
-// body::-webkit-scrollbar-thumb {
-//   background-color: var(--green);
-//   // border-radius: 10px;
-//   // border: 2px solid #171717;
-// }
 
 body {
   position: relative;
@@ -51,17 +31,11 @@ body {
   overflow-x: hidden;
 }
 
-
 body::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
-
-
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--Seagreen); 
-  border-radius: 5px; 
+  background-color: var(--Seagreen);
+  border-radius: 5px;
 }
-
-
-
