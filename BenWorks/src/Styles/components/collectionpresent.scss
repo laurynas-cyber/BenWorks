@@ -1,4 +1,43 @@
 .collection_present_container {
-  border: solid 1px red;
+  width: 100%;
   height: 100vh;
+  display: flex;
+  margin-top: 70px;
+
+  div {
+    width: 50%;
+    height: 100%;
+  }
+  .collection_present_green_field {
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    & > * {
+      //   color: var(--Beige2);
+      color: #fff;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .collection_present_smallertext {
+      font-size: 1.1rem;
+    }
+  }
+  .collection_present_img_container {
+    position: relative;
+    overflow: hidden;
+  }
+  .collection_present_img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
