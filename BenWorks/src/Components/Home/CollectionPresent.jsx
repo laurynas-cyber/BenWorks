@@ -13,6 +13,10 @@ export default function CollectionPresent() {
           For any custom wishes, contact us and we will discuss how can
           we realise it
         </p>
+        <div className="collection_present_btns">
+            <a href="">Discover products</a>
+            <a href="">Contact Us</a>
+        </div>
       </div>
       <div className="collection_present_img_container">
         <img src={bucks} alt="" />
