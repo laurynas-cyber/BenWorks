@@ -13,6 +13,10 @@
 //media
 @import "./mediascreen.scss";
 
+html {
+  scroll-behavior: smooth; /* scrolinimo metodas visam metodui arba navigaicijai.*/
+}
+
 * {
   margin: 0;
   padding: 0;

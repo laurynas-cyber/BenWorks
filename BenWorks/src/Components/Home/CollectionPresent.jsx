@@ -26,7 +26,7 @@ export default function CollectionPresent() {
           realise it
         </p>
         <div className="collection_present_btns">
-          <a href="">Discover products</a>
+          <a href="#home_products_slider_container">Discover products</a>
           <a href="">Contact us</a>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function CollectionPresent() {
           src={bucks}
           alt=""
           style={{
-            transform: `translateY(${offsetY * 0.15}px)`, 
+            transform: `translateY(${offsetY * 0.15}px)`,
             transition: "transform 0.1s ease-out",
           }}
         />

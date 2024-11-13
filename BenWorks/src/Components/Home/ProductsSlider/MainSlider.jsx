@@ -8,6 +8,7 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
 import "../../../Styles/components/sliders/homeslider.scss";
+import "../../../Styles/mediascreen.scss";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
 
@@ -21,10 +22,24 @@ export default function MainSlider() {
       enabled: true,
       onlyInViewport: false,
     },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+
+      // when window width is >= 640px
+      950: {
+        slidesPerView: 3,
+      },
+    },
   };
 
   return (
-    <section className="home_products_slider_container">
+    <section id="home_products_slider_container">
       <Swiper
         modules={[Navigation, Pagination, A11y, FreeMode]}
         spaceBetween={5}
@@ -32,6 +47,7 @@ export default function MainSlider() {
         slidesPerGroup={2}
         freeMode={true}
         keyboard={swiper.keyboard}
+        breakpoints={swiper.breakpoints}
         navigation
         pagination={swiper.pagination}
         onSwiper={(swiper) => console.log(swiper)}
