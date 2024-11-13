@@ -55,6 +55,11 @@
       justify-content: center;
       align-items: center;
       height: 700px;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
   .collection_present_container > div {
@@ -90,9 +95,6 @@
       }
     }
   }
-}
-
-@media (max-width: 480px) {
   .collection_present_container {
     .collection_present_green_field {
       height: 500px;
@@ -100,6 +102,10 @@
     }
   }
 }
+
+// @media (max-width: 480px) {
+
+// }
 
 // @media (min-width: 320px) {
 //   .banner {
