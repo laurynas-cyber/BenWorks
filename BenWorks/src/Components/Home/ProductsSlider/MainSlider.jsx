@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, FreeMode, A11y } from "swiper/modules";
 
 // import Swiper from "swiper/bundle";
 // import "swiper/css/bundle";
@@ -16,41 +16,52 @@ export default function MainSlider() {
     pagination: {
       clickable: true,
       dynamicBullets: true,
-
-      // renderBullet: function (index, className) {
-      //   return '<span class="' + className + '">' + (index + 1) + "</span>";
-      // },
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
   };
 
   return (
     <section className="home_products_slider_container">
       <Swiper
-        modules={[Navigation, Pagination, A11y]}
-        spaceBetween={50}
+        modules={[Navigation, Pagination, A11y, FreeMode]}
+        spaceBetween={5}
         slidesPerView={3}
+        slidesPerGroup={2}
+        freeMode={true}
+        keyboard={swiper.keyboard}
         navigation
         pagination={swiper.pagination}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         className="home_products_swiper"
       >
-        <NextButton />
-        <PrevButton />
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        {/* <NextButton />
+        <PrevButton /> */}
         <SwiperSlide>
-          {({ isActive }) => (
-            <div>Current slide is {isActive ? "active" : "not active"}</div>
-          )}
+          <div className="home_slider_card">1</div>
         </SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
+        <SwiperSlide>
+          <div className="home_slider_card">2</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="home_slider_card">3</div>
+        </SwiperSlide>
+        {/* <SwiperSlide>
+          {({ isActive }) => (
+            <div className="home_slider_card">
+              Current slide is {isActive ? "active" : "not active"}
+            </div>
+          )}
+        </SwiperSlide> */}
+        <SwiperSlide>
+          <div className="home_slider_card">4</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="home_slider_card">5</div>
+        </SwiperSlide>
       </Swiper>
     </section>
   );

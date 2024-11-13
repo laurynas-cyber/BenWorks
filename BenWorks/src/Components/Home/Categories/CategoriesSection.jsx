@@ -9,7 +9,11 @@ export default function CategoriesSection() {
       {categories.map((c, i) => (
         <div className="category" key={i}>
           <div className="category_bubble">
-            <img src={decors} alt="" style={{ animationDelay: `0.${i}s` }} />
+            <img
+              src={decors}
+              alt=""
+              style={{ animationDelay: `0.${5 + i}s` }}
+            />
           </div>
           <div className="category_name_container">
             <a className="category_name" href="">
@@ -19,7 +23,6 @@ export default function CategoriesSection() {
           </div>
         </div>
       ))}
-
     </section>
   );
 }
