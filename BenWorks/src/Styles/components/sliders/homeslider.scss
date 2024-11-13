@@ -1,0 +1,19 @@
+.home_products_slider_container {
+  height: 80vh;
+  .home_products_swiper {
+    border: solid 1px red;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+}
+
+.slider_next_arrow {
+  width: 100px;
+  fill: red;
+  color: red;
+  font-size: 200px;
+}
