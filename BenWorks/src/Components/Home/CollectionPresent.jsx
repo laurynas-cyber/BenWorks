@@ -35,7 +35,7 @@ export default function CollectionPresent() {
           src={bucks}
           alt=""
           style={{
-            transform: `translateY(${offsetY * 0.15}px)`, // Adjust the speed by changing multiplier (0.5 for slower, 1 for faster)
+            transform: `translateY(${offsetY * 0.15}px)`, 
             transition: "transform 0.1s ease-out",
           }}
         />
