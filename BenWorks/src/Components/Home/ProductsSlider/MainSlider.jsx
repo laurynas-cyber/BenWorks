@@ -7,6 +7,7 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
+import "../../../Styles/components/sliders/homeslider.scss";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
 
@@ -17,7 +18,7 @@ export default function MainSlider() {
       dynamicBullets: true,
 
       // renderBullet: function (index, className) {
-      //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+      //   return '<span class="' + className + '">' + (index + 1) + "</span>";
       // },
     },
     navigation: {

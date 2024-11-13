@@ -11,9 +11,20 @@
   }
 }
 
-.slider_next_arrow {
-  width: 100px;
-  fill: red;
-  color: red;
-  font-size: 200px;
+// .slider_next_arrow {
+//   width: 100px;
+//   fill: red;
+//   color: red;
+//   font-size: 200px;
+// }
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 7.5px;
+  border-radius: 0px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--green);
+  scale: (1.3);
 }
