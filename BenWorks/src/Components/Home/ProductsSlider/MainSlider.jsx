@@ -1,18 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, FreeMode, A11y } from "swiper/modules";
+import { useContext } from "react";
+import { ProductContext } from "../../Context/ProductContext";
 
-// import Swiper from "swiper/bundle";
-// import "swiper/css/bundle";
-import "swiper/scss";
-import "swiper/scss/navigation";
-import "swiper/scss/pagination";
-import "swiper/scss/scrollbar";
-import "../../../Styles/components/sliders/homeslider.scss";
-import "../../../Styles/mediascreen.scss";
-import NextButton from "./NextButton";
-import PrevButton from "./PrevButton";
 
 export default function MainSlider() {
+  const { ProductsData, setProductData } = useContext(ProductContext);
+
+  console.log(ProductsData);
   const swiper = {
     pagination: {
       clickable: true,
@@ -53,8 +48,6 @@ export default function MainSlider() {
         breakpoints={swiper.breakpoints}
         navigation
         pagination={swiper.pagination}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         className="home_products_swiper"
       >
         <SwiperSlide>

@@ -1,6 +1,9 @@
 //global
 @import "./global/colors.scss";
-
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+@import "swiper/scss/scrollbar";
 //components
 @import "./components/banner.scss";
 @import "./components/categories.scss";
