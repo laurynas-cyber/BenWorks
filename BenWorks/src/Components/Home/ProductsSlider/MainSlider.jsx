@@ -51,14 +51,18 @@ export default function MainSlider() {
         pagination={swiper.pagination}
         className="home_products_swiper"
       >
+        {/* horizontal */}
         {ProductsData.map((p, i) => (
           <SwiperSlide key={p.id}>
             <div className="home_slider_card">
               <div className="home_slider_card_img_container">
                 <img src={p.img} alt="" />
+                {/* <div className="slider_card_view_cont">
+                  <a href={p.id}>View</a>
+                </div> */}
               </div>
               <div className="slider_card_product_info_cont">
-                <span className="product_name">{p.name} </span>
+                <span className="product_name">{p.name}</span>
                 <span className="stock">
                   {p.onStock ? (
                     <>
