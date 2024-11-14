@@ -3,7 +3,6 @@ import { Navigation, Pagination, FreeMode, A11y } from "swiper/modules";
 import { useContext } from "react";
 import { ProductContext } from "../../Context/ProductContext";
 
-
 export default function MainSlider() {
   const { ProductsData, setProductData } = useContext(ProductContext);
 
@@ -49,8 +48,19 @@ export default function MainSlider() {
         navigation
         pagination={swiper.pagination}
         className="home_products_swiper"
+        id="swiper"
       >
-        <SwiperSlide>
+        {ProductsData.map((p, i) => (
+          <SwiperSlide key={p.id}>
+            <div className="home_slider_card">
+              <div className="home_slider_card_img_container">
+                <img src={p.img} alt="" />
+              </div>
+              <span>{p.name} </span>
+            </div>
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>
           <div className="home_slider_card">1</div>
         </SwiperSlide>
         <SwiperSlide>
@@ -68,7 +78,7 @@ export default function MainSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="home_slider_card">6</div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </section>
   );
