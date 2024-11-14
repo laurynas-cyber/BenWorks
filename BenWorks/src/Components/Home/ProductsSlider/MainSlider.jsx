@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, FreeMode, A11y } from "swiper/modules";
 import { useContext } from "react";
 import { ProductContext } from "../../Context/ProductContext";
+import { AiOutlineCheckSquare } from "react-icons/ai";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export default function MainSlider() {
   const { ProductsData, setProductData } = useContext(ProductContext);
@@ -48,7 +50,6 @@ export default function MainSlider() {
         navigation
         pagination={swiper.pagination}
         className="home_products_swiper"
-        id="swiper"
       >
         {ProductsData.map((p, i) => (
           <SwiperSlide key={p.id}>
@@ -56,29 +57,26 @@ export default function MainSlider() {
               <div className="home_slider_card_img_container">
                 <img src={p.img} alt="" />
               </div>
-              <span>{p.name} </span>
+              <div className="slider_card_product_info_cont">
+                <span className="product_name">{p.name} </span>
+                <span className="stock">
+                  {p.onStock ? (
+                    <>
+                      <AiOutlineCheckSquare className="out_of_stock_icon" /> In
+                      stock
+                    </>
+                  ) : (
+                    <>
+                      <AiOutlineCloseSquare className="out_of_stock_icon" />
+                      Out of stock
+                    </>
+                  )}
+                </span>
+                <span>{p.price} £</span>
+              </div>
             </div>
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-          <div className="home_slider_card">1</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="home_slider_card">2</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="home_slider_card">3</div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="home_slider_card">4</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="home_slider_card">5</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="home_slider_card">6</div>
-        </SwiperSlide> */}
       </Swiper>
     </section>
   );
