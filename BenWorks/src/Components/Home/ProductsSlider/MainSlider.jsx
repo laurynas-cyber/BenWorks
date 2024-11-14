@@ -22,16 +22,19 @@ export default function MainSlider() {
       enabled: true,
       onlyInViewport: false,
     },
+    navigation: {
+      nextEl: "custom_next",
+      prevEl: "custom_prev",
+    },
+
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
       },
       480: {
         slidesPerView: 2,
       },
-
-      // when window width is >= 640px
       950: {
         slidesPerView: 3,
       },
@@ -54,8 +57,6 @@ export default function MainSlider() {
         onSlideChange={() => console.log("slide change")}
         className="home_products_swiper"
       >
-        {/* <NextButton />
-        <PrevButton /> */}
         <SwiperSlide>
           <div className="home_slider_card">1</div>
         </SwiperSlide>
@@ -65,18 +66,15 @@ export default function MainSlider() {
         <SwiperSlide>
           <div className="home_slider_card">3</div>
         </SwiperSlide>
-        {/* <SwiperSlide>
-          {({ isActive }) => (
-            <div className="home_slider_card">
-              Current slide is {isActive ? "active" : "not active"}
-            </div>
-          )}
-        </SwiperSlide> */}
+
         <SwiperSlide>
           <div className="home_slider_card">4</div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="home_slider_card">5</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="home_slider_card">6</div>
         </SwiperSlide>
       </Swiper>
     </section>

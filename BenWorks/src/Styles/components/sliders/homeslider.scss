@@ -34,4 +34,12 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--Seagreen);
+  transition: all ease 0.3s;
+  transform: rotateX(50deg);
 }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: rotateX(0deg);
+}
+
