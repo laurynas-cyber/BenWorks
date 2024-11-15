@@ -19,10 +19,10 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer_containers social_container">
-        <h3>Social Media</h3>
+        <h3>Social media</h3>
         <ul className="social_media_list">
           <li className="social_icons">
-            <a href="https://www.facebook.com/" blank>
+            <a href="https://www.facebook.com/" >
               <FaFacebook />
             </a>
           </li>

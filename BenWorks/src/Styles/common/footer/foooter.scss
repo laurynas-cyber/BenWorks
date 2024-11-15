@@ -23,5 +23,10 @@
   li a {
     text-decoration: none;
     font-size: 30px;
+    fill: red;
+    color: red;
+    &:hover {
+      fill: var(--green);
+    }
   }
 }
