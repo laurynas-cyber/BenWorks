@@ -39,6 +39,7 @@ export default function MainSlider() {
 
   return (
     <section id="home_products_slider_container">
+      <h2>Check out assortment!</h2>
       <Swiper
         modules={[Navigation, Pagination, A11y, FreeMode]}
         spaceBetween={5}
@@ -57,9 +58,6 @@ export default function MainSlider() {
             <div className="home_slider_card">
               <div className="home_slider_card_img_container">
                 <img src={p.img} alt="" />
-                {/* <div className="slider_card_view_cont">
-                  <a href={p.id}>View</a>
-                </div> */}
               </div>
               <div className="slider_card_product_info_cont">
                 <span className="product_name">{p.name}</span>
@@ -81,6 +79,34 @@ export default function MainSlider() {
             </div>
           </SwiperSlide>
         ))}
+        {/* vertical */}
+        {/* {ProductsData.map((p, i) => (
+          <SwiperSlide key={p.id}>
+            <div className="home_slider_card">
+              <div className="home_slider_card_img_container">
+                <img src={p.img} alt="" />
+              </div>
+              <div className="slider_card_product_info_cont">
+                <a href="" className="view_info_btn">View</a>
+                <span className="product_name">{p.name}</span>
+                <span className="stock">
+                  {p.onStock ? (
+                    <>
+                      <AiOutlineCheckSquare className="out_of_stock_icon" /> In
+                      stock
+                    </>
+                  ) : (
+                    <>
+                      <AiOutlineCloseSquare className="out_of_stock_icon" />
+                      Out of stock
+                    </>
+                  )}
+                </span>
+                <span>{p.price} £</span>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))} */}
       </Swiper>
     </section>
   );

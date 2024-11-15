@@ -1,12 +1,17 @@
 #home_products_slider_container {
-  height: 90vh;
+  height: 700px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   background-color: var(--Brown);
+  padding-top: 100px;
   // background-color: white;
+  h2 {
+    color: #fff;
+    font-size: 30px;
+  }
   .home_products_swiper {
-    // border: solid 1px red;
     height: 90%;
     width: 90%;
     display: flex;
@@ -24,6 +29,7 @@
 
 .swiper-pagination-bullet-active {
   background-color: var(--Seagreen);
+  // background-color: var(--Beige2);
   scale: (1.3);
 }
 
@@ -31,13 +37,19 @@
 .swiper-pagination-bullet-active-prev {
   opacity: 1;
   background-color: var(--Seagreen);
+  // background-color: var(--Beige2);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--Seagreen);
+  color: var(--Beige2);
+
   transition: all ease 0.3s;
   transform: rotateX(50deg);
+}
+.swiper-button-disabled {
+  display: none;
 }
 
 .swiper-button-next:hover,
@@ -46,6 +58,7 @@
 }
 
 .home_slider_card {
+  // border: solid 1px red;
   height: 95%;
   width: 100%;
   position: relative;
@@ -89,7 +102,7 @@
       position: absolute;
       top: 0;
       width: 100%;
-      border: solid 1px red;
+      // border: solid 1px red;
       object-fit: contain;
       max-width: 100%;
       max-height: 100%;
@@ -119,3 +132,148 @@
   justify-content: center;
   align-items: center;
 }
+
+// testVertical
+// #home_products_slider_container {
+//   height: 90vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: var(--Brown);
+//   // background-color: white;
+//   .home_products_swiper {
+//     // border: solid 1px red;
+//     height: 90%;
+//     width: 90%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 0;
+//   }
+// }
+
+// .swiper-pagination-bullet {
+//   width: 15px;
+//   height: 7.5px;
+//   border-radius: 0px;
+// }
+
+// .swiper-pagination-bullet-active {
+//   background-color: var(--Beige2);
+//   scale: (1.3);
+// }
+
+// .swiper-pagination-bullet-active-next,
+// .swiper-pagination-bullet-active-prev {
+//   opacity: 1;
+//   background-color: var(--Beige2);
+// }
+
+// .swiper-button-next,
+// .swiper-button-prev {
+//   color: var(--Beige2);
+//   transition: all ease 0.3s;
+//   transform: rotateX(50deg);
+// }
+
+// .swiper-button-next::after,
+// .swiper-button-prev::after {
+//   font-size: 75px;
+// }
+
+// .swiper-button-next:hover,
+// .swiper-button-prev:hover {
+//   transform: rotateX(0deg);
+// }
+
+// .home_slider_card {
+//   height: 95%;
+//   width: 100%;
+//   position: relative;
+//   overflow: hidden;
+//   &:hover img {
+//     scale: 1.015;
+//   }
+
+//   &:hover .slider_card_product_info_cont {
+//     opacity: 1;
+//   }
+//   .slider_card_product_info_cont {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 15px;
+//     padding: 10px;
+//     position: absolute;
+//     bottom: 0;
+//     opacity: 0;
+//     transition: all ease-out 0.3s;
+//     width: 100%;
+//     background-color: #0f0f08d9;
+//     height: auto;
+//     backdrop-filter: blur(1px);
+//     .view_info_btn {
+//       text-decoration: none;
+//       border: solid 4px var(--Seagreen);
+//       font-size: 40px;
+//       padding: 10px;
+//       background-color: rgba(92, 87, 87, 0.295);
+//       // color: #fff;
+//       color: #fff;
+//       border-radius: 7px;
+//       opacity: 0.6;
+//     }
+//     span {
+//       color: #fff;
+//     }
+//     .product_name {
+//       font-size: 20px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//       transition: all ease 0.3s;
+//     }
+//   }
+
+//   .home_slider_card_img_container {
+//     height: 100%;
+//     overflow: hidden;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     .slider_card_view_cont {
+//       position: absolute;
+//       top: 0;
+//       width: 100%;
+//       object-fit: contain;
+//       max-width: 100%;
+//       max-height: 100%;
+//     }
+//     img {
+//       max-width: 100%;
+//       max-height: 100%;
+//       object-fit: contain;
+//       transition: all ease 0.3s;
+
+//       // width: 100%;
+//       // height: 100%;
+//       // object-fit: cover;
+//     }
+//   }
+// }
+
+// .out_of_stock_icon {
+//   fill: var(--Seagreen);
+//   width: 50px;
+//   height: 50px;
+//   font-weight: 100;
+// }
+
+// .stock {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
