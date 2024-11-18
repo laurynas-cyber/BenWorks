@@ -21,19 +21,19 @@ export default function Footer() {
       <div className="footer_containers social_container">
         <h3>Social media</h3>
         <ul className="social_media_list">
-          <li className="social_icons">
-            <a href="https://www.facebook.com/" >
-              <FaFacebook />
+          <li>
+            <a href="https://www.facebook.com/">
+              <FaFacebook className="social_icons" />
             </a>
           </li>
-          <li className="social_icons">
+          <li>
             <a href="">
-              <FaInstagram />
+              <FaInstagram className="social_icons" />
             </a>
           </li>
-          <li className="social_icons">
+          <li>
             <a href="">
-              <FaTwitter />
+              <FaTwitter className="social_icons" />
             </a>
           </li>
         </ul>

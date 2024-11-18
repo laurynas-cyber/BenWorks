@@ -30,3 +30,13 @@
     }
   }
 }
+
+.social_icons {
+  transition: all ease-in 0.2s;
+  position: relative;
+  bottom: 0;
+  &:hover {
+    fill: var(--green);
+    bottom: 2.3px;
+  }
+}
