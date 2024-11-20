@@ -12,7 +12,6 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    padding-top: 0;
   }
 }
 
@@ -23,8 +22,7 @@
   li a {
     text-decoration: none;
     font-size: 30px;
-    fill: red;
-    color: red;
+
     &:hover {
       fill: var(--green);
     }

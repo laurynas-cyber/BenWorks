@@ -6,9 +6,8 @@ import { AiOutlineCheckSquare } from "react-icons/ai";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export default function MainSlider() {
-  const { ProductsData, setProductData } = useContext(ProductContext);
+  const { ProductsData } = useContext(ProductContext);
 
-  console.log(ProductsData);
   const swiper = {
     pagination: {
       clickable: true,
