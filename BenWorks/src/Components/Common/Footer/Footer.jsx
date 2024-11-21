@@ -11,15 +11,16 @@ export default function Footer() {
     pagination: {
       clickable: true,
       dynamicBullets: true,
+      type: "fraction",
     },
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
-    // navigation: {
-    //   nextEl: "custom_next",
-    //   prevEl: "custom_prev",
-    // },
+    navigation: {
+      nextEl: "custom_next",
+      prevEl: "custom_prev",
+    },
 
     breakpoints: {
       320: {
@@ -42,7 +43,7 @@ export default function Footer() {
         breakpoints={swiper.breakpoints}
         navigation
         pagination={swiper.pagination}
-        // className="home_products_swiper"
+        className="footer_swiper"
       >
         <SwiperSlide>
           <CallUs animated={animated} scrollYProgress={scrollYProgress} />
