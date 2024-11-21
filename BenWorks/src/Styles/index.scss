@@ -9,6 +9,7 @@
 @import "./components/categories.scss";
 @import "./components/collectionpresent.scss";
 @import "./components/sliders/homeslider.scss";
+@import "./components/productpage.scss";
 
 // common
 @import "./common/nav/navigation.scss";
@@ -18,7 +19,7 @@
 @import "./mediascreen.scss";
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 * {
