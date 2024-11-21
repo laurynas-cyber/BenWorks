@@ -4,9 +4,6 @@ export default function MailUs({ animated, scrollYProgress }) {
       className="footer_containers mail_container"
       style={{
         position: "relative",
-        visibility: scrollYProgress.to(
-          (op) => `${console.log(parseFloat(op).toFixed(2) * 10 - 9)}`
-        ),
         opacity: scrollYProgress.to(
           (op) => `${parseFloat(op).toFixed(2) * 10 - 9}`
         ),

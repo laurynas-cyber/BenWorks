@@ -12,21 +12,21 @@ export default function NavIcon() {
       <div
         className={"bars"}
         style={{
-          backgroundColor: (!navbarScroll || !navbar) && "#090c02",
+          backgroundColor: (!navbarScroll || !navbar) && "var(--Seagreen)",
           top: !navbar && "-20px",
         }}
       ></div>
       <div
         className={"bars"}
         style={{
-          backgroundColor: (!navbarScroll || !navbar) && "#090c02",
+          backgroundColor: (!navbarScroll || !navbar) && "var(--Seagreen)",
           transform: !navbar && "rotate(45deg)",
         }}
       ></div>
       <div
         className={"bars"}
         style={{
-          backgroundColor: (!navbarScroll || !navbar) && "#090c02",
+          backgroundColor: (!navbarScroll || !navbar) && "var(--Seagreen)",
           transform: !navbar && "rotate(-45deg)",
           top: !navbar && "-11px",
         }}
