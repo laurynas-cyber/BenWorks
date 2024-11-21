@@ -1,7 +1,7 @@
 //navigation start
 @import "./customicon.scss";
 nav {
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   box-shadow: 0px 1px 5px #666d65;
   display: flex;
@@ -90,6 +90,8 @@ li {
   right: 0;
   list-style: none;
   transition: all 0.4s ease-out;
+  overflow: hidden;
+  z-index: 100;
   li {
     margin: 35px 20px;
     background-color: var(--green);
