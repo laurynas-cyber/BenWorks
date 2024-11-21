@@ -1,3 +1,8 @@
-const categories = [{ name: "Chairs" }, { name: "Decors" }, { name: "Tables" }];
+const categories = [
+  { name: "Chairs" },
+  { name: "Decors" },
+  { name: "Tables" },
+  { name: "Outside" },
+];
 
 export default categories;

@@ -57,7 +57,6 @@
       height: 350px;
     }
     .collection_present_img_container {
-
       height: 700px;
       img {
         object-fit: cover;
@@ -113,16 +112,23 @@
   }
 }
 
-// @media (max-width: 480px) {
-
-// }
+@media (max-width: 480px) {
+  #home_products_slider_container {
+    h2 {
+      font-size: 7vw;
+    }
+  }
+  .section_footer {
+    height: 27vh;
+    .footer_containers {
+      span {
+    
+        width: 60%;
+       
+      }
+    }
+  }
+}
 
 // @media (min-width: 320px) {
-//   .banner {
-//     .video {
-//       iframe {
-//         scale: 2.4;
-//       }
-//     }
-//   }
 // }
