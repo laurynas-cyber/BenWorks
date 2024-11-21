@@ -2,68 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { useScroll, animated, useSpring } from "@react-spring/web";
+import { useScroll, animated } from "@react-spring/web";
 export default function Footer() {
-  const containerRef = useRef(null);
-  const [textStyles, textApi] = useSpring(() => ({
-    y: "100%",
-  }));
-  const { scrollYProgress } = useScroll({
-    container: containerRef,
-    onChange: ({ value: { scrollYProgress } }) => {
-      if (scrollYProgress > 0.7) {
-        textApi.start({ y: "0" });
-      } else {
-        textApi.start({ y: "100%" });
-      }
-    },
-    default: {
-      immediate: true,
-    },
-  });
+  const { scrollYProgress } = useScroll();
 
-  useEffect(() => {
-    console.log(scrollYProgress);
-  }, [scrollYProgress]);
-  // const [scroll, setScroll] = useState(false);
-  // const [pageHeight, setPageHeight] = useState(0);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", scrollBar);
-  //   const updatePageHeight = () => {
-  //     setPageHeight(document.documentElement.scrollHeight);
-  //   };
-  //   updatePageHeight();
-  //   window.addEventListener("resize", updatePageHeight);
-  //   // console.log(scroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollBar);
-  //     window.removeEventListener("resize", updatePageHeight);
-  //   };
-  // }, [scroll]);
-
-  // const scrollBar = () => {
-  //   console.log(scroll + window.innerHeight);
-  //   setScroll(window.scrollY);
-  //   // if (window.scrollY > 600) {
-  //   //   setScroll(true);
-  //   // } else {
-  //   //   setScroll(false);
-  //   // }
-  // };
-
-  // const calculateOpacity = (start, end) => {
-  //   // return 1 - (scroll - start) / (end - start);
-  //   if (pageHeight == scroll + window.innerHeight) {
-  //     return 1;
-  //   } else return 0;
-  // };
 
   return (
-    <footer className="section_footer" ref={containerRef}>
-      {/* <div className="footer_containers call_container">
-        <p>Current Page Height: {pageHeight}px</p>
-      </div> */}
+    <footer className="section_footer">
+
       <div className="footer_containers call_container">
         <h3>Call us </h3>
         <span>Available on Monday - Sunday from 5:00 PM. </span>
@@ -82,7 +29,13 @@ export default function Footer() {
         className="footer_containers social_container"
         style={{
           position: "relative",
-          left: scrollYProgress.to((val) => `${val * 100}px`),
+
+          opacity: scrollYProgress.to(
+            (op) => `${parseFloat(op).toFixed(2) * 10 - 9}`
+          ),
+          left: scrollYProgress.to(
+            (val) => `${2000 - (val * 2000).toFixed()}px`
+          ),
         }}
       >
         <h3>Social media</h3>
