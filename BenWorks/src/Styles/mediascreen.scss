@@ -57,14 +57,13 @@
       height: 350px;
     }
     .collection_present_img_container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
       height: 700px;
       img {
         object-fit: cover;
-        height: 100%;
+        height: 120%;
         width: 100%;
+        // top: -170px;
       }
     }
   }
@@ -105,6 +104,11 @@
     .collection_present_green_field {
       height: 500px;
       padding: 10px;
+    }
+    .collection_present_img_container {
+      img {
+        top: -250px;
+      }
     }
   }
 }

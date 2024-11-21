@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   margin-top: 70px;
-
+  overflow: hidden;
   & > div {
     width: 50%;
     height: 100%;
@@ -33,6 +33,7 @@
   .collection_present_img_container {
     position: relative;
     overflow: hidden;
+
   }
   .collection_present_img_container img {
     width: 100%;
@@ -40,7 +41,6 @@
 
     position: absolute;
     top: -200px;
-
   }
   .collection_present_btns {
     display: flex;
