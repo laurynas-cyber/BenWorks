@@ -4,10 +4,11 @@ import { useContext } from "react";
 import { ProductContext } from "../../Context/ProductContext";
 import { AiOutlineCheckSquare } from "react-icons/ai";
 import { AiOutlineCloseSquare } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export default function MainSlider() {
   const { ProductsData } = useContext(ProductContext);
-
+  const navigate = useNavigate();
   const swiper = {
     pagination: {
       clickable: true,
@@ -54,7 +55,10 @@ export default function MainSlider() {
         {/* horizontal */}
         {ProductsData.map((p, i) => (
           <SwiperSlide key={p.id}>
-            <div className="home_slider_card">
+            <div
+              className="home_slider_card"
+              onClick={(_) => navigate(`/products/${p.id}`)}
+            >
               <div className="home_slider_card_img_container">
                 <img src={p.img} alt="" />
               </div>

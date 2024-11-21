@@ -9,13 +9,7 @@ export default function Footer() {
 
   const swiper = {
     pagination: {
-      clickable: true,
-      dynamicBullets: true,
       type: "fraction",
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
     },
     navigation: {
       nextEl: "custom_next",
