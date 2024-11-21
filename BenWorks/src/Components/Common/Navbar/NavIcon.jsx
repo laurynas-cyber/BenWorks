@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ResponsiveContext } from "../../Context/ResponsiveContext";
 
-export default function NavIcon() {
+export default function NavIcon({ isHomePage }) {
   const { navbar, setNavbar, navbarScroll, isResponsive } =
     useContext(ResponsiveContext);
   function handeleBar() {
@@ -12,21 +12,27 @@ export default function NavIcon() {
       <div
         className={"bars"}
         style={{
-          backgroundColor: (!navbarScroll || !navbar) && "var(--Seagreen)",
+          backgroundColor: isHomePage
+            ? (!navbarScroll || !navbar) && "var(--Seagreen)"
+            : "var(--Seagreen)",
           top: !navbar && "-20px",
         }}
       ></div>
       <div
         className={"bars"}
         style={{
-          backgroundColor: (!navbarScroll || !navbar) && "var(--Seagreen)",
+          backgroundColor: isHomePage
+            ? (!navbarScroll || !navbar) && "var(--Seagreen)"
+            : "var(--Seagreen)",
           transform: !navbar && "rotate(45deg)",
         }}
       ></div>
       <div
         className={"bars"}
         style={{
-          backgroundColor: (!navbarScroll || !navbar) && "var(--Seagreen)",
+          backgroundColor: isHomePage
+            ? (!navbarScroll || !navbar) && "var(--Seagreen)"
+            : "var(--Seagreen)",
           transform: !navbar && "rotate(-45deg)",
           top: !navbar && "-11px",
         }}
