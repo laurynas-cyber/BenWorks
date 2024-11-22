@@ -69,6 +69,20 @@
   .collection_present_container > div {
     width: 100%;
   }
+  .section_footer {
+    height: 32vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section_footer {
+    height: 35vh;
+    .footer_containers {
+      span {
+        width: 60%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -85,16 +99,39 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 0;
         font-size: 9vw;
+        gap: 0;
+        margin: 0;
+        // flex-wrap: wrap;
+        border: solid 1px blue;
+        // line-height: 50px;
         .bigtextbanner {
-          font-size: 40px;
-
+          font-size: 9vw;
+          border: solid 1px red;
+          padding: 0;
           margin: 0;
+          gap: 0;
         }
-        .smalltextbanner {
+        .restbannerCont {
+          border: solid 1px green;
           margin: 0;
+          padding: 0;
+          // line-height: 0px;
+          .smalltextbanner {
+            margin: 0;
+            border: solid 1px red;
+            padding: 0;
+            font-size: 3vw;
+            font-size: 20px;
+          }
+          .textSpanCont {
+            margin: 0;
+            border: solid 1px red;
+            padding: 0;
+            font-size: 5vw;
+          }
         }
       }
     }
@@ -116,16 +153,6 @@
   #home_products_slider_container {
     h2 {
       font-size: 7vw;
-    }
-  }
-  .section_footer {
-    height: 27vh;
-    .footer_containers {
-      span {
-    
-        width: 60%;
-       
-      }
     }
   }
 }
