@@ -62,7 +62,6 @@
         object-fit: cover;
         height: 120%;
         width: 100%;
-        // top: -170px;
       }
     }
   }
@@ -101,36 +100,21 @@
         align-items: center;
         justify-content: flex-start;
         margin-bottom: 0;
-        font-size: 9vw;
         gap: 0;
-        margin: 0;
-        // flex-wrap: wrap;
-        border: solid 1px blue;
-        // line-height: 50px;
+
         .bigtextbanner {
-          font-size: 9vw;
-          border: solid 1px red;
-          padding: 0;
+          font-size: 35px;
+
           margin: 0;
-          gap: 0;
         }
         .restbannerCont {
-          border: solid 1px green;
-          margin: 0;
-          padding: 0;
-          // line-height: 0px;
           .smalltextbanner {
-            margin: 0;
-            border: solid 1px red;
-            padding: 0;
-            font-size: 3vw;
             font-size: 20px;
           }
           .textSpanCont {
-            margin: 0;
-            border: solid 1px red;
-            padding: 0;
-            font-size: 5vw;
+            font-size: 30px;
+            height: auto;
+            line-height: normal;
           }
         }
       }
