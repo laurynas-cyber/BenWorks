@@ -5,3 +5,5 @@ scss
 react-router
 npm i swiper
 React- spring
+autoprefixier
+postcss-loader
