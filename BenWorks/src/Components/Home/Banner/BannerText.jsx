@@ -10,7 +10,8 @@ export default function BannerText() {
             wooden <span className="smalltextbanner">furniture </span>
           </span>
           <span className="textSpanCont">
-            <span className="smalltextbanner">for </span> garden
+            <span className="smalltextbanner">for </span> garden{" "}
+            <span className="smalltextbanner">and </span> home
           </span>
         </div>
       </div>
