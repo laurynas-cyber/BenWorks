@@ -7,10 +7,10 @@ export default function BannerText() {
         <span className="bigtextbanner">Handmade </span>
         <div className="restbannerCont">
           <span className="textSpanCont">
-            wooden <span className="smalltextbanner">furnitures </span>
+            wooden <span className="smalltextbanner">furniture </span>
           </span>
           <span className="textSpanCont">
-            <span className="smalltextbanner">for your </span> home
+            <span className="smalltextbanner">for </span> garden
           </span>
         </div>
       </div>
