@@ -1,8 +1,7 @@
 const categories = [
-  { name: "Chairs" },
-  { name: "Decors" },
-  { name: "Tables" },
-  { name: "Outside" },
+  { name: "Decor" },
+  { name: "Home" },
+  { name: "Outdoor" },
 ];
 
 export default categories;

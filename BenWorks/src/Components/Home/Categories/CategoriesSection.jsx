@@ -1,7 +1,6 @@
 import categories from "../../../../../back/data/categories.js";
 import decors from "../../../../../back/public/img/decors.avif";
-import chair from "../../../../../back/public/img/barstoelen.webp";
-import tables from "../../../../../back/public/img/table.avif";
+
 
 export default function CategoriesSection() {
   return (

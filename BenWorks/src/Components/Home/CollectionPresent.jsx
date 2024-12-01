@@ -18,8 +18,8 @@ export default function CollectionPresent() {
       <div className="collection_present_green_field">
         <h2>Natural wood brings life to your home</h2>
         <p>
-          In our assortment you can find different type of furnitures used for
-          inside and outside house.
+          In our assortment you can find different type of furniture used for
+          inside and outdoor.
         </p>
         <p className="collection_present_smallertext">
           For any custom wishes, contact us and we will discuss how can we

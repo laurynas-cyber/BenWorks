@@ -7,11 +7,17 @@ export default function BannerText() {
         <span className="bigtextbanner">Handmade </span>
         <div className="restbannerCont">
           <span className="textSpanCont">
-            wooden <span className="smalltextbanner">furniture </span>
+            furniture
+            <span className="smalltextbanner"> for</span>
+            {/* furniture */}
           </span>
-          <span className="textSpanCont">
-            <span className="smalltextbanner">for </span> garden{" "}
-            <span className="smalltextbanner">and </span> home
+          <span
+            className="textSpanCont"
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            garden <span className="smalltextbanner">and </span> home
           </span>
         </div>
       </div>
