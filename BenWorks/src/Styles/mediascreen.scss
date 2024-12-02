@@ -1,4 +1,12 @@
 //Media start banner
+
+@media screen and (min-width: 1900px) {
+  body {
+    font-size: 1.5vw;
+
+  }
+}
+
 @media screen and (max-width: 1450px) {
   .banner {
     .bannertextCont {
@@ -37,7 +45,6 @@
   .banner {
     .bannertextCont {
       .bannertext {
-        
         height: 50%;
         align-items: space-around;
         .smalltextbanner {
@@ -56,7 +63,18 @@
     flex-direction: column;
     height: auto;
     .collection_present_green_field {
-      height: 350px;
+      height: 360px;
+      h2 {
+        // font-size: 4vw;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      .collection_present_smallertext {
+        font-size: 1rem;
+      }
     }
     .collection_present_img_container {
       height: 700px;
@@ -97,7 +115,6 @@
     }
     .bannertextCont {
       .bannertext {
-         
         height: 70%;
         display: flex;
         flex-direction: column;
