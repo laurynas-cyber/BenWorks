@@ -37,7 +37,9 @@
   .banner {
     .bannertextCont {
       .bannertext {
-        height: 80%;
+        
+        height: 50%;
+        align-items: space-around;
         .smalltextbanner {
           font-size: 20px;
         }
@@ -95,6 +97,8 @@
     }
     .bannertextCont {
       .bannertext {
+         
+        height: 70%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -108,7 +112,7 @@
         .restbannerCont {
           margin-left: 15px;
           span:first-child {
-            // margin-bottom: 10px;
+            margin-bottom: 10px;
           }
           .smalltextbanner {
             font-size: 20px;
@@ -144,7 +148,7 @@
   .banner {
     .bannertextCont {
       .bannertext {
-        padding-left: 2%;
+        padding-left: 7%;
         .restbannerCont {
           .textSpanCont {
             font-size: 7vw;
