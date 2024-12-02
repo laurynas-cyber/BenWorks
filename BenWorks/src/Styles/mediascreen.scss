@@ -3,7 +3,12 @@
 @media screen and (min-width: 1900px) {
   body {
     font-size: 1.5vw;
-
+  }
+  nav {
+    .logo {
+      font-size: 3vw;
+      height: auto;
+    }
   }
 }
 
