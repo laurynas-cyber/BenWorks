@@ -9,14 +9,8 @@ export default function BannerText() {
           <span className="textSpanCont">
             furniture
             <span className="smalltextbanner"> for</span>
-            {/* furniture */}
           </span>
-          <span
-            className="textSpanCont"
-            style={{
-              marginLeft: "15px",
-            }}
-          >
+          <span className="textSpanCont second_textSpanCont">
             garden <span className="smalltextbanner">and </span> home
           </span>
         </div>

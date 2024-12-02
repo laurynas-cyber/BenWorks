@@ -127,12 +127,12 @@
         justify-content: flex-start;
         margin-bottom: 0;
         gap: 0;
-        padding-left: 15%;
+        padding-left: 10%;
         .bigtextbanner {
           font-size: 10vw;
         }
         .restbannerCont {
-          margin-left: 15px;
+          align-self: center;
           span:first-child {
             margin-bottom: 10px;
           }
@@ -143,6 +143,10 @@
             font-size: 30px;
             height: auto;
             line-height: normal;
+          }
+          .second_textSpanCont {
+          
+            left: 30px;
           }
         }
       }
