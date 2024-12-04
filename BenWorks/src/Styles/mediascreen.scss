@@ -10,6 +10,13 @@
       height: auto;
     }
   }
+  .collection_present_container {
+    .collection_present_btns {
+      & a {
+        border: solid 0.15vw #ffffff;
+      }
+    }
+  }
 
   .categories_container {
     .category {
@@ -22,17 +29,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .banner {
-    .bannertextCont {
-      justify-content: center;
-
-      .bannertext {
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -58,8 +54,12 @@
   }
   .banner {
     .bannertextCont {
+      justify-content: center;
       .bannertext {
+        width: 100%;
+        justify-content: center;
         height: 50%;
+        border: solid 1px red;
         align-items: space-around;
         .smalltextbanner {
           font-size: 20px;
@@ -129,7 +129,7 @@
     }
     .bannertextCont {
       .bannertext {
-        height: 70%;
+        height: 75%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
