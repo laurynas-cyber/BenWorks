@@ -52,7 +52,6 @@
       .restbannerCont {
         display: flex;
         flex-direction: column;
-        border: solid 1px green;
       }
       span {
         color: var(--Beige2);
@@ -64,11 +63,10 @@
         font-size: 1.7vw;
         margin: 10px;
         margin-bottom: 25px;
-        border: solid 1px yellow;
       }
       .textSpanCont {
         font-size: 3vw;
-        border: solid 1px red;
+
         line-height: normal;
       }
       .second_textSpanCont {
